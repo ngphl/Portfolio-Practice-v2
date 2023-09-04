@@ -1,0 +1,230 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+* {
+  font-size: 10px;
+}
+
+main * {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Start Navbar */
+header nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #557b83;
+  box-shadow: 0 1px 6px;
+}
+
+.link {
+  width: fit-content;
+  margin: auto;
+  margin-right: 0;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+#name {
+  margin: 5px;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: var(--main-white);
+}
+
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: var(--main-white);
+  transition: background-color 0.5s;
+  border: 2px solid transparent;
+}
+
+nav a:hover {
+  background-color: #43666d;
+  transition: background-color 0.5s;
+}
+
+/* End navbar*/
+
+/* Start welcome */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    300deg,
+    rgba(225, 225, 229, 1) 0%,
+    rgba(240, 240, 240, 1) 34%,
+    rgba(205, 225, 229, 1) 100%
+  );
+}
+
+#welcome-section h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 6rem;
+  color: #43666d;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#welcome-section p {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* End welcome */
+
+/* Start projects */
+#projects {
+  background-color: var(--main-blue);
+  text-align: center;
+}
+
+#intro h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+#intro p {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+#intro {
+  padding: 50px;
+  color: var(--main-white);
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  width: 400px;
+  height: 410px;
+}
+
+
+.project-image {
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.project-tile {
+  text-decoration: none;
+}
+
+.project-title {
+  margin: 0; /* Remove any default margin */
+  padding: 1rem 0.5rem; /* Adjust padding as needed */
+  font-size: 2rem;
+  color: var(--main-white);
+  background-color: rgb(67, 121, 187);
+}
+
+/* End project */
+
+/* Start contact */
+
+/* Start contact */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 75vh;
+  background: linear-gradient(
+    300deg,
+    rgba(225, 225, 229, 1) 0%,
+    rgba(240, 240, 240, 1) 34%,
+    rgba(205, 225, 229, 1) 100%
+  );
+}
+
+#contact h1 {
+  margin: 0; /* Remove the margin */
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+}
+
+.contact-header p {
+  font-size: 2rem;
+}
+
+
+.contact-link {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact-detail {
+  padding: 5px;
+  text-decoration: none;
+  color: var(--main-gray);
+  margin: 20px;
+  font-size: 3rem;
+  display: inline-block; /* Add this line */
+  transition: transform 0.3s; /* Add a transition for smooth movement */
+}
+
+.contact-detail:hover {
+  transform: translateY(8px);
+}
