@@ -15,7 +15,6 @@ main * {
   overflow: hidden;
 }
 
-
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -49,7 +48,6 @@ header nav {
   font-weight: normal;
   color: var(--main-white);
 }
-
 
 nav ul {
   display: flex;
@@ -153,7 +151,6 @@ nav a:hover {
   height: 410px;
 }
 
-
 .project-image {
   margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any default padding */
@@ -161,16 +158,23 @@ nav a:hover {
   height: 350px;
   object-fit: cover;
 }
+
 .project-tile {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .project-title {
   margin: 0; /* Remove any default margin */
   padding: 1rem 0.5rem; /* Adjust padding as needed */
+  width: 100%;
   font-size: 2rem;
   color: var(--main-white);
   background-color: rgb(67, 121, 187);
+  
 }
 
 /* End project */
@@ -208,7 +212,6 @@ nav a:hover {
 .contact-header p {
   font-size: 2rem;
 }
-
 
 .contact-link {
   padding: 20px;
